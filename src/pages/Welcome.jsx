@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
+import Trainings from "../components/Trainings";
 
 function Welcome() {
   return (
@@ -14,6 +15,7 @@ function Welcome() {
       <Stats />
       <Services />
       <Projects />
+      <Trainings />
       <Testimonials />
       <CallToAction />
     </main>
