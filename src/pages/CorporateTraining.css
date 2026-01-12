@@ -1,0 +1,221 @@
+.corporate-training {
+  padding-top: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Common Container */
+.corporate-training .container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Section */
+.corporate-training .section-hero {
+  padding: 6rem 1.5rem;
+  background-color: #f0fdf4;
+}
+
+.corporate-training .hero-content {
+  text-align: center;
+}
+
+.corporate-training .hero-label {
+  color: #00a859;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.corporate-training .hero-headline {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.corporate-training .text-highlight {
+  color: #00a859;
+}
+
+.corporate-training .hero-description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #475569;
+  max-width: 42rem;
+  margin: 0 auto 2.5rem auto;
+}
+
+.corporate-training .hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.corporate-training .btn-primary {
+  background-color: #00a859;
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.corporate-training .btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Features Section */
+.corporate-training .section-features {
+  padding: 6rem 1.5rem;
+  background-color: white;
+}
+
+.corporate-training .features-grid {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+.corporate-training .section-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.corporate-training .features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.corporate-training .feature-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+}
+
+.corporate-training .feature-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a859;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.corporate-training .feature-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.corporate-training .feature-description {
+  color: #64748b;
+  margin: 0;
+}
+
+/* Stats Grid */
+.corporate-training .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.corporate-training .stat-card {
+  height: 16rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.corporate-training .stat-card-dark {
+  background-color: #0f172a;
+}
+
+.corporate-training .stat-card-brand {
+  background-color: #00a859;
+}
+
+.corporate-training .stat-value {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+}
+
+.corporate-training .stat-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.corporate-training .testimonial-card {
+  grid-column: span 2;
+  height: 10rem;
+  background-color: #f1f5f9;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.corporate-training .testimonial-source {
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem 0;
+}
+
+.corporate-training .testimonial-quote {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.corporate-training .testimonial-star {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .corporate-training .section-hero,
+  .corporate-training .section-features {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .corporate-training .hero-headline {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .corporate-training .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

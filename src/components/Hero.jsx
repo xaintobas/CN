@@ -1,48 +1,98 @@
-import { ArrowRight } from "lucide-react";
-import { DevAgency } from "../assets/Assets";
-import { NavLink } from "react-router-dom";
-
-function Hero() {
+import React from "react";
+import "./Hero.css";
+const Hero = ({ onOpenAdvisor }) => {
   return (
-    <section className="pt-20 pb-20 md:pt-30 md:pb-30 px-4 overflow-hidden">
-      <div className="container mx-auto ">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-          {/* Text Content */}
-          <div className="flex-1 flex flex-col lg:text-left text-center items-center lg:items-start">
-            <span className="uppercase mb-4 text-green-600 font-bold text-sm block">
-              Web & Software Development
-            </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6">
-              Your Vision, <br />
-              <span className="text-green-600">Our Code.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8">
-              We design and build custom websites and software solutions that
-              drive growth, engage users, and deliver real business results.
-            </p>
-            <NavLink
-              className="w-fit flex justify-center items-center gap-x-3 bg-green-600 text-white py-4 px-10 rounded-2xl font-semibold transition-all hover:bg-green-700 shadow-2xl"
-              to="/connect"
-            >
-              Start Your Project{" "}
-              <ArrowRight
-                size={20}
-                className="group-hover:translate-x-1 transition-transform duration-300"
-              />
-            </NavLink>
+    <section className="hero-section">
+      {/* Background patterns */}
+      <div className="hero-bg-pattern"></div>
+
+      <div className="hero-container">
+        <div className="hero-content">
+          <span className="hero-badge">Code Nation Academy</span>
+          <h1 className="hero-title">
+            Don't Just Learn.{" "}
+            <span className="text-highlight">Transform Your Life.</span>
+          </h1>
+          <p className="hero-description">
+            We bridge the gap between curiosity and professional mastery. Join
+            500+ graduates who replaced uncertainty with high-paying tech
+            careers.
+          </p>
+
+          <div className="hero-actions">
+            <button className="btn-primary">
+              Enroll Now
+              <svg
+                className="icon-sm"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </button>
+            <button className="btn-secondary">Get Career Advice</button>
           </div>
 
-          {/* Hero Image / Visual */}
-          <div className="flex-1 w-full flex justify-center lg:justify-end ">
+          <div className="social-proof">
+            <div className="avatar-group">
+              {[1, 2, 3, 4].map((i) => (
+                <img
+                  key={i}
+                  src={`https://picsum.photos/seed/${i + 20}/100/100`}
+                  className="avatar-img"
+                  alt="Student"
+                />
+              ))}
+            </div>
+            <p className="proof-text">
+              Join <span className="proof-highlight">500+</span> successful
+              alumni worldwide
+            </p>
+          </div>
+        </div>
+
+        <div className="hero-image-wrapper">
+          <div className="hero-image-card">
             <img
-              src={DevAgency}
-              alt="Code Nation - Website Design Agency"
-              className="w-full max-w-xl object-contain rounded-lg shadow-2xl"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop"
+              className="hero-main-img"
+              alt="Students working together"
             />
+            <div className="hero-image-overlay"></div>
+
+            {/* Dynamic Overlay Card */}
+            <div className="success-card">
+              <div className="success-card-header">
+                <div className="success-icon-box">
+                  <svg
+                    className="icon-md"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="success-label">Latest Success</p>
+                  <p className="success-title">Chidi hired at Microsoft</p>
+                </div>
+              </div>
+              <p className="success-quote">
+                "Code Nation didn't just teach me Python, they taught me how to
+                think like a Software Engineer."
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
 export default Hero;

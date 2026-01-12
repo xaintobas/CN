@@ -1,0 +1,224 @@
+.about-page {
+  padding-top: 4rem;
+}
+
+/* Utility Container */
+.about-page .container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Section */
+.about-page .hero-section {
+  background-color: var(--slate-900);
+  padding: 7rem 1.5rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-page .hero-bg-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-green-light);
+  transform: skewX(12deg) translateX(8rem);
+}
+
+.about-page .hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.about-page .hero-tag {
+  color: var(--primary-green);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.about-page .hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.about-page .text-highlight {
+  color: var(--primary-green);
+}
+
+.about-page .hero-description {
+  font-size: 1.25rem;
+  color: var(--slate-400);
+  max-width: 42rem;
+  line-height: 1.625;
+}
+
+/* Mission & Vision Section */
+.about-page .mission-section {
+  padding: 6rem 1.5rem;
+  background-color: var(--white);
+}
+
+.about-page .mission-grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.about-page .section-heading {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 1.5rem;
+}
+
+.about-page .section-text {
+  font-size: 1.125rem;
+  color: var(--slate-600);
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+}
+
+.about-page .green-bar {
+  width: 5rem;
+  height: 0.375rem;
+  background-color: var(--primary-green);
+  border-radius: 9999px;
+}
+
+/* Values Section */
+.about-page .values-section {
+  padding: 6rem 1.5rem;
+  background-color: var(--slate-50);
+}
+
+.about-page .section-header-center {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-page .section-heading-large {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 1rem;
+}
+
+.about-page .section-subheading {
+  color: var(--slate-500);
+}
+
+.about-page .values-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-page .value-card {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--slate-100);
+  transition: all 0.3s ease;
+}
+
+.about-page .value-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.about-page .value-icon {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-page .value-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-page .value-desc {
+  color: var(--slate-600);
+}
+
+/* Team Section */
+.about-page .team-section {
+  padding: 6rem 1.5rem;
+  background-color: var(--white);
+}
+
+.about-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.about-page .team-member-card {
+  text-align: center;
+}
+
+.about-page .team-image-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  aspect-ratio: 1 / 1;
+}
+
+.about-page .team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 500ms ease;
+}
+
+.about-page .team-member-card:hover .team-image {
+  filter: grayscale(0);
+}
+
+.about-page .team-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.about-page .team-role {
+  color: var(--primary-green);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Responsive Styles (md breakpoint) */
+@media (min-width: 768px) {
+  .about-page .hero-section,
+  .about-page .mission-section,
+  .about-page .values-section,
+  .about-page .team-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .about-page .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .about-page .mission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about-page .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

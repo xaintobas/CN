@@ -1,19 +1,21 @@
-import { Code2, Phone, Mail, MapPin } from "lucide-react";
+import React from "react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { FooterLogo } from "../assets/Assets";
+import "./Footer.css";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-stone-900 text-stone-300 pt-16 pb-8 border-t border-stone-800">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
           {/* Brand Column */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-2 text-white">
+          <div className="brand-column">
+            <div className="brand-header">
               <FooterLogo />
             </div>
-            <p className="text-sm leading-relaxed text-stone-400">
+            <p className="brand-description">
               We design and build custom websites and software solutions that
               drive growth, engage users, and deliver real business results.
             </p>
@@ -21,8 +23,8 @@ function Footer() {
 
           {/* Services Column */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">Services</h4>
-            <ul className="space-y-3 text-sm">
+            <h4 className="column-title">Services</h4>
+            <ul className="footer-nav-list">
               {[
                 "Mobile Apps",
                 "UI/UX Design",
@@ -31,10 +33,7 @@ function Footer() {
                 "SEO Optimization",
               ].map((item) => (
                 <li key={item}>
-                  <a
-                    href="#"
-                    className="hover:text-green-500 transition-colors duration-200 flex items-center gap-2"
-                  >
+                  <a href="#" className="footer-link">
                     {item}
                   </a>
                 </li>
@@ -44,8 +43,8 @@ function Footer() {
 
           {/* Quick Links Column */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">Quick Links</h4>
-            <ul className="space-y-3 text-sm">
+            <h4 className="column-title">Quick Links</h4>
+            <ul className="footer-nav-list">
               {[
                 "Who We Are",
                 "What We Do",
@@ -54,10 +53,7 @@ function Footer() {
                 "Privacy Policy",
               ].map((item) => (
                 <li key={item}>
-                  <a
-                    href="#"
-                    className="hover:text-green-500 transition-colors duration-200"
-                  >
+                  <a href="#" className="footer-link">
                     {item}
                   </a>
                 </li>
@@ -67,29 +63,30 @@ function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">Contact Us</h4>
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-green-500 shrink-0" />
+            <h4 className="column-title">Contact Us</h4>
+            <ul className="contact-list">
+              <li className="contact-item">
+                <Phone size={18} className="contact-icon" />
                 <span>+234 815 507 1646</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-green-500 shrink-0" />
+              <li className="contact-item">
+                <Mail size={18} className="contact-icon" />
                 <span>hello@codenation.website</span>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-green-500 shrink-0 mt-0.5" />
+              <li className="contact-item align-start">
+                <MapPin size={18} className="contact-icon icon-offset" />
                 <span>Benin City, Nigeria</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-stone-800 pt-8 text-center text-sm text-stone-500">
+        <div className="copyright-section">
           <p>&copy; {currentYear} CodeNation. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
   );
 }
+
 export default Footer;

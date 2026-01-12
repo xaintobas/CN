@@ -1,0 +1,229 @@
+.tech-solutions .tech-solutions-wrapper {
+  padding-top: 4rem;
+}
+
+.tech-solutions .container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Section */
+.tech-solutions .hero-section {
+  background-color: #f8fafc;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.tech-solutions .hero-grid {
+  display: grid;
+  gap: 5rem;
+  align-items: center;
+}
+
+.tech-solutions .hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+}
+
+.tech-solutions .highlight-text {
+  color: #00a859;
+}
+
+.tech-solutions .hero-description {
+  font-size: 1.25rem;
+  color: #475569;
+  margin-bottom: 2.5rem;
+  line-height: 1.625;
+}
+
+/* Stats */
+.tech-solutions .stats-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tech-solutions .stat-number {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.tech-solutions .stat-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.tech-solutions .stat-divider {
+  width: 1px;
+  height: 3rem;
+  background-color: #e2e8f0;
+}
+
+.tech-solutions .cta-button {
+  background-color: #0f172a;
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.tech-solutions .cta-button:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Visual */
+.tech-solutions .hero-visual {
+  position: relative;
+}
+
+.tech-solutions .image-frame {
+  background-color: #00a859;
+  border-radius: 60px;
+  padding: 0.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.tech-solutions .hero-image {
+  border-radius: 58px;
+  width: 100%;
+  display: block;
+}
+
+.tech-solutions .floating-badge {
+  position: absolute;
+  bottom: -2.5rem;
+  right: -2.5rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid #f1f5f9;
+  animation: bounce 3s infinite;
+}
+
+.tech-solutions .badge-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tech-solutions .status-dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+.tech-solutions .badge-text {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Features Section */
+.tech-solutions .features-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: white;
+}
+
+.tech-solutions .features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tech-solutions .features-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.tech-solutions .features-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.tech-solutions .feature-card {
+  padding: 2.5rem;
+  background-color: #f8fafc;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.tech-solutions .feature-card:hover {
+  background-color: #00a859;
+  color: white;
+}
+
+.tech-solutions .feature-icon {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-solutions .feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tech-solutions .feature-description {
+  color: #475569;
+  line-height: 1.625;
+}
+
+.tech-solutions .feature-card:hover .feature-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .tech-solutions .hero-section,
+  .tech-solutions .features-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .tech-solutions .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  .tech-solutions .features-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-solutions .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
