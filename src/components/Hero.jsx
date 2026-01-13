@@ -8,7 +8,7 @@ const Hero = ({ onOpenAdvisor }) => {
 
       <div className="hero-container">
         <div className="hero-content">
-          <span className="hero-badge">Code Nation Academy</span>
+          <span className="hero-badge">Code Nation</span>
           <h1 className="hero-title">
             Don't Just Learn.{" "}
             <span className="text-highlight">Transform Your Life.</span>

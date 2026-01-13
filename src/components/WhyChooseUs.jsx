@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="content-grid">
           <div className="text-column">
-            <h2 className="section-heading">
+            <h2 className="why-us-heading section-heading">
               Why We Are Different From <br />
               <span className="highlight-text">Standard Bootcamps</span>
             </h2>
@@ -125,7 +125,12 @@ const WhyChooseUs = () => {
               </p>
               <div className="avatar-group">
                 {[...Array(5)].map((_, i) => (
-                  <div key={i} className="avatar-circle"></div>
+                  <img
+                    key={i}
+                    src={`https://picsum.photos/seed/${i + 20}/100/100`}
+                    className="avatar-img"
+                    alt="Student"
+                  />
                 ))}
                 <div className="avatar-counter">+42</div>
               </div>

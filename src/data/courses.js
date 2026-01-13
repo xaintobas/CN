@@ -126,7 +126,7 @@ export const courses = [
     tags: ["Figma", "Prototyping", "Testing"],
     theme: "theme-pink",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1470&auto=format&fit=crop",
     salaryRange: "$60k - $110k",
     youtubeId: "w8Zby1P50ZY",
     outcomes: ["Product Designer", "UX Researcher", "UI Designer"],

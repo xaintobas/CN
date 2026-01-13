@@ -36,7 +36,7 @@ const Connect = () => {
                   </div>
                   <div>
                     <h4 className="item-title">Email Us</h4>
-                    <p className="item-subtitle">hello@codenation.academy</p>
+                    <p className="item-subtitle">hello@codenation.website</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -63,9 +63,7 @@ const Connect = () => {
                   </div>
                   <div>
                     <h4 className="item-title">Our HQ</h4>
-                    <p className="item-subtitle">
-                      Suite 12, Digital Plaza, Lagos, Nigeria
-                    </p>
+                    <p className="item-subtitle">Benin City, Nigeria</p>
                   </div>
                 </div>
               </div>
